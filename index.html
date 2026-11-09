@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CareerMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>✦ AI CareerMate</h2>
+    <p>Your Personal AI Career Assistant</p>
+</header>
+
+<section class="hero">
+    <h1>Build Your Future with AI</h1>
+    <p>Prepare for placements, improve your skills and achieve your career goals.</p>
+</section>
+
+<main>
+    <section class="card">
+        <h2>AI Resume Analyzer</h2>
+        <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+        <input id="role" placeholder="Enter your target job role">
+        <button onclick="analyzeResume()">Analyze Resume</button>
+    </section>
+
+    <section class="card">
+        <h2>AI Interview Preparation</h2>
+        <input id="interviewRole" placeholder="Enter job role">
+        <select id="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+        <select id="type">
+            <option>Technical</option>
+            <option>HR</option>
+            <option>Mixed</option>
+        </select>
+        <button onclick="generateInterview()">Generate Questions</button>
+    </section>
+
+    <section class="card">
+        <h2>AI Skill Roadmap</h2>
+        <input id="career" placeholder="Enter your career goal">
+        <textarea id="skills" placeholder="Enter your current skills"></textarea>
+        <select id="duration">
+            <option>4 weeks</option>
+            <option>8 weeks</option>
+            <option>12 weeks</option>
+        </select>
+        <button onclick="generateRoadmap()">Create Roadmap</button>
+    </section>
+
+    <section class="card">
+        <h2>AI Cover Letter Generator</h2>
+        <input id="job" placeholder="Job title">
+        <input id="company" placeholder="Company name">
+        <textarea id="details" placeholder="Enter your skills, education and experience"></textarea>
+        <button onclick="generateCoverLetter()">Generate Cover Letter</button>
+    </section>
+
+    <section class="result">
+        <h2>AI Generated Result</h2>
+        <div id="output">Your AI results will appear here.</div>
+        <button onclick="copyResult()">Copy Result</button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 AI CareerMate | GenAI Integrated Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
